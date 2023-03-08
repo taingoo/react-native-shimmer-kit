@@ -1,6 +1,6 @@
 {
   "name": "react-native-shimmer-kit",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A JavaScript library used for creating shimmer effect in React Native.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
