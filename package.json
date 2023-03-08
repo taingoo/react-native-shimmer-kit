@@ -37,9 +37,10 @@
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build"
   },
   "keywords": [
-    "react-native",
-    "ios",
-    "android"
+    "shimmer",
+    "placeholder",
+    "loading",
+    "react-native"
   ],
   "repository": "https://github.com/taingoo/react-native-shimmer-kit",
   "author": "taingoo <tantai23493@gmail.com> (https://github.com/taingoo)",
