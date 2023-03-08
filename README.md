@@ -8,12 +8,17 @@ A JavaScript library used for creating shimmer effect in React Native.
 ## Installation
 
 1. Install library
-    > using npm
+
+    * *using **npm***
+    <br>
+    
     ```
     npm install react-native-shimmer-kit react-native-linear-gradient --save
     ````
     
-    > or using yarn
+    * *or using **yarn***
+    <br>
+        
     ```
     yarn add react-native-shimmer-kit react-native-linear-gradient
     ```
