@@ -12,7 +12,9 @@ export interface ShimmerProps {
   marginRight?: number;
   colors?: any;
   duration?: number;
-  isLoop?: boolean;
+  islooped?: boolean;
+  isReversed?: boolean;
   customStyle?: ViewStyle;
   children?: any;
+  LinearGradientComponent?: any;
 }

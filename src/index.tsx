@@ -1,10 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { Animated, Easing, StyleSheet, View } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import RNLinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 import type { ShimmerProps } from './types';
-
-const LinearGradientAnim = Animated.createAnimatedComponent(LinearGradient);
 
 const Shimmer: React.FC<ShimmerProps> = ({
   width,
@@ -18,10 +16,15 @@ const Shimmer: React.FC<ShimmerProps> = ({
   marginRight = 0,
   colors = ['#E6E6E6', '#f5f5f5', '#f5f5f5', '#E6E6E6'],
   duration = 1500,
-  isLoop = true,
+  islooped = true,
+  isReversed = false,
   customStyle,
   children,
+  LinearGradientComponent = RNLinearGradient,
 }) => {
+  const LinearGradientAnim = Animated.createAnimatedComponent(
+    LinearGradientComponent
+  );
   const value = useRef(new Animated.Value(0)).current;
   const animation = Animated.timing(value, {
     toValue: 1,
@@ -31,8 +34,8 @@ const Shimmer: React.FC<ShimmerProps> = ({
   });
 
   useEffect(() => {
-    isLoop ? Animated.loop(animation).start() : animation.start();
-  }, [animation, isLoop]);
+    islooped ? Animated.loop(animation).start() : animation.start();
+  }, [animation, islooped]);
 
   return (
     <View
@@ -62,7 +65,7 @@ const Shimmer: React.FC<ShimmerProps> = ({
             {
               translateX: value.interpolate({
                 inputRange: [0, 1],
-                outputRange: [-width, width],
+                outputRange: isReversed ? [width, -width] : [-width, width],
               }),
             },
           ],
