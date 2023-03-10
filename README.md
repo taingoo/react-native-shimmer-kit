@@ -1,9 +1,11 @@
 ## React Native Shimmer Kit
 *A JavaScript library used for creating shimmer effect in React Native.*
 
-<p>
-  <a href="https://www.npmjs.com/package/react-native-shimmer-kit"><img src="https://img.shields.io/endpoint?label=npm&style=flat-square"></a>
-</p>
+
+[![npm](https://img.shields.io/npm/v/react-native-shimmer-kit.svg?style=flat-square&color=blue)](https://www.npmjs.com/package/react-native-shimmer-kit)
+
+
+<img src="https://github.com/taingoo/react-native-shimmer-kit/blob/master/example/src/example.gif">
 
 ## Get Started
 
