@@ -1,6 +1,6 @@
 {
   "name": "react-native-shimmer-kit",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A JavaScript library used for creating shimmer effect in React Native.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -39,8 +39,14 @@
   "keywords": [
     "shimmer",
     "placeholder",
+    "skeleton",
     "loading",
-    "react-native"
+    "indicator",
+    "animation",
+    "react-native",
+    "react-native-shimmer",
+    "react-native-placeholder",
+    "react-native-skeleton"
   ],
   "repository": "https://github.com/taingoo/react-native-shimmer-kit",
   "author": "taingoo <tantai23493@gmail.com> (https://github.com/taingoo)",
